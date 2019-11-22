@@ -5,7 +5,8 @@ module.exports = {
     ],
     plugins: [
         '@typescript-eslint',
-        'prettier'
+        'prettier',
+        'googleappsscript'
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -16,5 +17,8 @@ module.exports = {
         'prettier/prettier': [
             'error',
         ],
+    },
+    env: {
+      "googleappsscript/googleappsscript": true
     }
 }
