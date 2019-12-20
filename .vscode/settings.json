@@ -1,6 +1,8 @@
 {
-  "eslint.autoFixOnSave": true,
+  // VSCode自体の自動フォーマットを無効化
+  "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll.tslint": true
+    // ESLintの自動フォーマットを有効化
+    "source.fixAll.eslint": true
   }
 }
