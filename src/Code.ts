@@ -129,7 +129,7 @@ function fetchDelayInfo() {
       channel: CHANNEL_ID,
       username: '運行情報監視bot',
       icon_emoji: iconEmoji,
-      text: `*電車遅延情報* ${webAPIInfo}`,
+      text: '*電車遅延情報*',
       attachments: (function() {
         const attachments: any[] = [];
         if (resolvedDelays.length > 0) {
@@ -170,7 +170,7 @@ function fetchDelayInfo() {
           attachments.push({
             fields: [
               {
-                title: targetTitle,
+                title: `${targetTitle} ${webAPIInfo}`,
                 value: targetBody,
               },
             ],
